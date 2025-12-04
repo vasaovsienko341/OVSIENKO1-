@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Замовлення AMV — Василь Овсієнко</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #0d0d0d;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #111;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(255, 100, 0, 0.2);
+        }
+        h1 {
+            color: #ff6a00;
+        }
+        label {
+            margin-top: 15px;
+            display: block;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 12px;
+            margin-top: 8px;
+            border-radius: 8px;
+            border: 1px solid #444;
+            background: #222;
+            color: #fff;
+        }
+        button {
+            margin-top: 20px;
+            padding: 12px 20px;
+            background: #ff6a00;
+            border: none;
+            border-radius: 8px;
+            color: #000;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #ff7f00;
+        }
+        .yt {
+            color: #ff6a00;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Замовлення AMV / Аніме кліпів</h1>
+
+        <p>
+            Створюю унікальні AMV та аніме-кліпи українською мовою.  
+            Ви можете замовити монтаж будь-якої складності.
+        </p>
+
+        <p>
+            Мій канал YouTube:  
+            <a class="yt" href="https://www.youtube.com/@VasyaAMVGalaxy" target="_blank">
+                @VasyaAMVGalaxy
+            </a>
+        </p>
+
+        <h2>Заповніть форму замовлення</h2>
+
+        <form action="https://formspree.io/f/xjkbqlra" method="POST">
+            <label>Ваше ім'я</label>
+            <input type="text" name="name" required>
+
+            <label>Контакт (Email або Telegram)</label>
+            <input type="text" name="contact" required>
+
+            <label>Бажана тривалість AMV</label>
+            <select name="time">
+                <option value="30 секунд">30 секунд</option>
+                <option value="1 хвилина">1 хвилина</option>
+                <option value="2 хвилини">2 хвилини</option>
+                <option value="3 хвилини">3 хвилини</option>
+            </select>
+
+            <label>Ваші побажання (яке аніме, яка музика)</label>
+            <textarea name="details" rows="5"></textarea>
+
+            <button type="submit">Відправити заявку</button>
+        </form>
+    </div>
+</body>
+</html>
