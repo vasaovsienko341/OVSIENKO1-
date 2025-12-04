@@ -54,7 +54,7 @@
             color: #fff;
             border-radius: 8px;
         }
-        button {
+        button, .amv-btn {
             padding: 12px 20px;
             background: #ff6a00;
             border: none;
@@ -64,13 +64,16 @@
             cursor: pointer;
             margin-top: 15px;
             font-size: 16px;
+            text-decoration: none;
+            display: inline-block;
         }
-        button:hover {
+        button:hover, .amv-btn:hover {
             background: #ff8100;
         }
     </style>
 </head>
 <body>
+
 <div class="container">
     <div class="book-block">
         <img src="cover.png" class="cover" alt="Обкладинка">
@@ -89,6 +92,9 @@
                 Електронна — <span class="orange">50 грн</span><br>
                 Паперова / Преміум — <span class="orange">100 грн</span>
             </div>
+
+            <!-- Кнопка переходу на сторінку замовлення AMV -->
+            <a href="amv.html" class="amv-btn">🎬 Замовити AMV</a>
         </div>
     </div>
 
@@ -128,5 +134,6 @@
         </form>
     </div>
 </div>
+
 </body>
 </html>
