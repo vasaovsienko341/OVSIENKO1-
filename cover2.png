@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Не Вимикай Світло</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #0d0d0d;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: 30px auto;
+            background: #111;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(255, 100, 0, 0.2);
+        }
+        .cover {
+            width: 280px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #ff6a00;
+        }
+        .price {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="cover2.png" alt="Обкладинка книги" class="cover">
+
+    <h1>Не Вимикай Світло</h1>
+
+    <p><b>Автор:</b> Василь Овсієнко</p>
+
+    <div class="price">
+        Електронна — <span style="color:#ff6a00;">50 грн</span><br>
+        Паперова / Преміум — <span style="color:#ff6a00;">100 грн</span>
+    </div>
+
+    <h2>Опис книги</h2>
+    <p>
+        Коли світло стає єдиним бар’єром між реальністю та тим, що ховається у темряві —
+        місто починає змінюватися. «Не Вимикай Світло» — це друга містична історія
+        з елементами урбаністичного жаху, де кожна тінь має власний голос, а ніч
+        стає полюванням за душами.
+    </p>
+
+    <a href="index.html" style="color:#ff6a00;">⬅ Повернутися на головну</a>
+</div>
+
+</body>
+</html>
