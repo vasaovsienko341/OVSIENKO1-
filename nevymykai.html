@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Не Вимикай Світло — Василь Овсієнко</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #0d0d0d;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 30px auto;
+            background: #111;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(255, 100, 0, 0.2);
+        }
+        .book-block {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            align-items: center;
+        }
+        .cover {
+            width: 260px;
+            border-radius: 10px;
+        }
+        .title {
+            font-size: 32px;
+            font-weight: bold;
+        }
+        .orange {
+            color: #ff6a00;
+        }
+        .price {
+            font-size: 26px;
+            margin-top: 10px;
+        }
+        .section {
+            margin-top: 40px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            background: #222;
+            border: 1px solid #444;
+            color: #fff;
+            border-radius: 8px;
+        }
+        button {
+            padding: 12px 20px;
+            background: #ff6a00;
+            border: none;
+            border-radius: 8px;
+            color: #000;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 15px;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #ff8100;
+        }
+        a { color: #ff6a00; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="book-block">
+        <img src="ne-vymykai-cover.png" class="cover" alt="Обкладинка книги">
+
+        <div>
+            <div class="title">«Не Вимикай Світло»</div>
+
+            <p>Містичний та медичний хорор — збірка моторошних історій</p>
+
+            <p><b>Автор:</b> Василь Овсієнко</p>
+            <p><b>Жанр:</b> хорор, містика, лікарняні жахи</p>
+            <p><b>Формат:</b> ePub / PDF · Паперова копія</p>
+
+            <div class="price">
+                Електронна — <span class="orange">50 грн</span><br>
+                Паперова / Преміум — <span class="orange">100 грн</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Опис книги</h2>
+        <p>
+            «Не Вимикай Світло» — це збірка зловісних оповідань, що ведуть читача
+            у темні коридори лікарень, моргів, нічних змін та місць, де світло є
+            останнім захистом від того, що ховається у тіні.
+        </p>
+        <p>
+            У цих історіях оживають загублені пацієнти, прокляті речі,
+            дивні істоти та події, що не підкоряються законам реальності.
+            Єдине правило — <b>не вимкнути світло</b>.  
+            Бо темрява там не порожня.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Контакти</h2>
+        <p><b>Telegram:</b> <a href="https://t.me/OVSIENKO3">https://t.me/OVSIENKO3</a></p>
+        <p><b>Email:</b> <a href="mailto:vasaovsienko341@gmail.com">vasaovsienko341@gmail.com</a></p>
+    </div>
+
+    <div class="section">
+        <h2>Передзамовлення</h2>
+        <form action="https://formspree.io/f/xjkbqlra" method="POST">
+            <label>Ваше ім'я</label>
+            <input type="text" name="name" required>
+
+            <label>Email або Telegram</label>
+            <input type="text" name="contact" required>
+
+            <label>Формат</label>
+            <select name="format" required>
+                <option value="Електронна — 50 грн">Електронна — 50 грн</option>
+                <option value="Паперова — 100 грн">Паперова — 100 грн</option>
+            </select>
+
+            <button type="submit">Надіслати заявку</button>
+        </form>
+    </div>
+
+</div>
+
+</body>
+</html>
