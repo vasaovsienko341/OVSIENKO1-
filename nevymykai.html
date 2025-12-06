@@ -12,6 +12,26 @@
             color: #fff;
             font-family: Arial, sans-serif;
         }
+
+        /* Меню */
+        .menu {
+            width: 100%;
+            background: #111;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(255, 100, 0, 0.2);
+        }
+        .menu a {
+            color: #ff6a00;
+            text-decoration: none;
+            font-size: 20px;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+        .menu a:hover {
+            color: #ffa346;
+        }
+
         .container {
             width: 90%;
             max-width: 1100px;
@@ -21,30 +41,38 @@
             border-radius: 15px;
             box-shadow: 0 0 20px rgba(255, 100, 0, 0.2);
         }
+
         .book-block {
             display: flex;
             flex-wrap: wrap;
             gap: 30px;
-            align-items: center;
+            align-items: flex-start;
         }
+
         .cover {
-            width: 260px;
+            width: 300px;
             border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 100, 0, 0.3);
         }
+
         .title {
             font-size: 32px;
             font-weight: bold;
         }
+
         .orange {
             color: #ff6a00;
         }
+
         .price {
             font-size: 26px;
-            margin-top: 10px;
+            margin-top: 15px;
         }
+
         .section {
             margin-top: 40px;
         }
+
         input, select, textarea {
             width: 100%;
             padding: 12px;
@@ -54,6 +82,7 @@
             color: #fff;
             border-radius: 8px;
         }
+
         button {
             padding: 12px 20px;
             background: #ff6a00;
@@ -65,26 +94,30 @@
             margin-top: 15px;
             font-size: 16px;
         }
+
         button:hover {
             background: #ff8100;
         }
-        a { color: #ff6a00; }
     </style>
 </head>
 <body>
 
+<!-- Меню -->
+<div class="menu">
+    <a href="index.html">Головна</a>
+    <a href="books.html">Книги</a>
+    <a href="author.html">Автор</a>
+</div>
+
 <div class="container">
 
     <div class="book-block">
-        <img src="ne-vymykai-cover.png" class="cover" alt="Обкладинка книги">
+        <img src="nevymykai-cover.png" class="cover" alt="Не вимикай світло">
 
         <div>
             <div class="title">«Не Вимикай Світло»</div>
-
-            <p>Містичний та медичний хорор — збірка моторошних історій</p>
-
             <p><b>Автор:</b> Василь Овсієнко</p>
-            <p><b>Жанр:</b> хорор, містика, лікарняні жахи</p>
+            <p><b>Жанр:</b> психологічний хорор, містика</p>
             <p><b>Формат:</b> ePub / PDF · Паперова копія</p>
 
             <div class="price">
@@ -97,26 +130,20 @@
     <div class="section">
         <h2>Опис книги</h2>
         <p>
-            «Не Вимикай Світло» — це збірка зловісних оповідань, що ведуть читача
-            у темні коридори лікарень, моргів, нічних змін та місць, де світло є
-            останнім захистом від того, що ховається у тіні.
-        </p>
-        <p>
-            У цих історіях оживають загублені пацієнти, прокляті речі,
-            дивні істоти та події, що не підкоряються законам реальності.
-            Єдине правило — <b>не вимкнути світло</b>.  
-            Бо темрява там не порожня.
+            «Не Вимикай Світло» — це історія про місто, яке боїться темряви більше,
+            ніж власних таємниць. Коли світло гасне, на вулицях з'являється те,
+            чого не повинно існувати. Головний герой — звичайна людина, яка
+            повертається додому після роботи, але раптом розуміє, що місто
+            спостерігає за ним. Тіні стають довшими, звук ліхтарів — глухим,
+            а кроки за спиною — надто знайомими.
+            <br><br>
+            Це історія про страх, який живе поруч. Про те, що кожен із нас
+            хоч раз у житті боявся вимкнути світло.
         </p>
     </div>
 
     <div class="section">
-        <h2>Контакти</h2>
-        <p><b>Telegram:</b> <a href="https://t.me/OVSIENKO3">https://t.me/OVSIENKO3</a></p>
-        <p><b>Email:</b> <a href="mailto:vasaovsienko341@gmail.com">vasaovsienko341@gmail.com</a></p>
-    </div>
-
-    <div class="section">
-        <h2>Передзамовлення</h2>
+        <h2>Замовити книгу</h2>
         <form action="https://formspree.io/f/xjkbqlra" method="POST">
             <label>Ваше ім'я</label>
             <input type="text" name="name" required>
