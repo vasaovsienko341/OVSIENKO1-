@@ -1,153 +1,184 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Тіні Дев’ятого Року — Перший Спалах Фенікса</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: #0d0d0d;
-            color: #fff;
-            font-family: Arial, sans-serif;
-        }
-        .container {
-            width: 90%;
-            max-width: 1100px;
-            margin: 30px auto;
-            background: #111;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 0 20px rgba(255, 100, 0, 0.2);
-        }
-        .book-block {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 30px;
-            align-items: center;
-        }
-        .cover {
-            width: 250px;
-            border-radius: 10px;
-        }
-        .title {
-            font-size: 30px;
-            font-weight: bold;
-        }
-        .orange {
-            color: #ff6a00;
-        }
-        .price {
-            font-size: 26px;
-            margin-top: 10px;
-        }
-        .section {
-            margin-top: 40px;
-        }
-        input, select, textarea {
-            width: 100%;
-            padding: 12px;
-            margin-top: 10px;
-            background: #222;
-            border: 1px solid #444;
-            color: #fff;
-            border-radius: 8px;
-        }
-        button {
-            padding: 12px 20px;
-            background: #ff6a00;
-            border: none;
-            border-radius: 8px;
-            color: #000;
-            font-weight: bold;
-            cursor: pointer;
-            margin-top: 15px;
-            font-size: 16px;
-        }
-        button:hover {
-            background: #ff8100;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Тіні Дев’ятого Року — Василь Овсієнко</title>
+
+<style>
+body {
+    margin: 0;
+    background: #0d0d0d;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+/* Меню */
+.menu {
+    background: #111;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 2px solid #ff6a00;
+}
+.menu a {
+    color: #ff6a00;
+    margin: 0 20px;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Контейнер */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+    background: #111;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255,100,0,0.2);
+}
+
+/* Книга */
+.book-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.cover {
+    width: 250px;
+    border-radius: 10px;
+}
+.title {
+    font-size: 28px;
+    font-weight: bold;
+}
+.orange {
+    color: #ff6a00;
+}
+.price {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+/* Секції */
+.section {
+    margin-top: 40px;
+}
+
+/* Кнопки */
+.button {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #ff6a00;
+    color: #000;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+/* Форма */
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background: #222;
+    border: 1px solid #444;
+    color: #fff;
+    border-radius: 8px;
+}
+button {
+    margin-top: 15px;
+    padding: 12px;
+    background: #ff6a00;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+</style>
 </head>
+
 <body>
 
-<!-- ЛОГОТИП -->
-<div style="text-align:center; margin-top:20px;">
-    <img src="logo.png" alt="Логотип" style="width:180px; border-radius:12px;">
+<!-- Меню -->
+<div class="menu">
+    <a href="index.html">Головна</a>
+    <a href="books.html">Книги</a>
+    <a href="author.html">Автор</a>
 </div>
 
 <div class="container">
-    <div class="book-block">
-        <img src="cover.png" class="cover" alt="Обкладинка">
-        <div>
-            <div class="title">
-                «Тіні Дев’ятого Року» — <span class="orange">Перший Спалах Фенікса</span>
-            </div>
 
-            <p>Містичний урбаністичний жах — коротка книга / повість</p>
+<!-- КНИГА -->
+<div class="book-block">
+    <img src="cover.png" class="cover">
 
-            <p><b>Автор:</b> Василь Овсієнко</p>
-            <p><b>Жанр:</b> психологічний хорор, містика</p>
-            <p><b>Формат:</b> ePub / PDF · Паперова копія</p>
+    <div>
+        <div class="title">
+            «Тіні Дев’ятого Року» — <span class="orange">Перший Спалах Фенікса</span>
+        </div>
 
-            <div class="price">
-                Електронна — <span class="orange">50 грн</span><br>
-                Паперова / Преміум — <span class="orange">100 грн</span>
-            </div>
+        <p>Містичний урбаністичний жах</p>
+
+        <p><b>Автор:</b> Василь Овсієнко</p>
+
+        <div class="price">
+            Електронна — <span class="orange">50 грн</span><br>
+            Паперова — <span class="orange">100 грн</span>
         </div>
     </div>
-
-    <div class="section">
-        <h2>Опис книги</h2>
-        <p>
-            У центрі оповідання — мегаполіс, що ховає тріщини між реальностями.
-            Коли сонце сідає, вулиці гублять знайомі лінії, а світло ламп стає тонкою
-            межею між звичайним та темрявою. «Тіні Дев’ятого Року» — це історія про
-            пробудження старих сил, про втрату звичного та появу першої іскри Фенікса,
-            яка запускає ланцюг подій, що змінює долі.
-        </p>
-    </div>
-
-    <div class="section">
-        <h2>Контакти</h2>
-        <p><b>Telegram:</b> <a href="https://t.me/OVSIENKO3" style="color:#ff6a00">https://t.me/OVSIENKO3</a></p>
-        <p><b>Email:</b> <a href="mailto:vasaovsienko341@gmail.com" style="color:#ff6a00">vasaovsienko341@gmail.com</a></p>
-    </div>
-
-    <div class="section">
-        <h2>Форма передзамовлення</h2>
-        <form action="https://formspree.io/f/xjkbqlra" method="POST">
-            <label>Ваше ім'я</label>
-            <input type="text" name="name" required>
-
-            <label>Email або Telegram</label>
-            <input type="text" name="contact" required>
-
-            <label>Формат</label>
-            <select name="format" required>
-                <option value="Електронна — 50 грн">Електронна — 50 грн</option>
-                <option value="Паперова — 100 грн">Паперова — 100 грн</option>
-            </select>
-
-            <button type="submit">Надіслати заявку</button>
-        </form>
-    </div>
 </div>
-</body>
-</html>
-<div style="margin-top: 25px;">
-    <a href="nevymykai.html" 
-       style="
-            display: inline-block;
-            padding: 12px 20px;
-            background: #ff6a00;
-            color: #000;
-            font-weight: bold;
-            border-radius: 8px;
-            text-decoration: none;
-            font-size: 18px;
-       ">
-        📘 Не Вимикай Світло — перейти до книги
+
+<!-- КНОПКА ДРУГОЇ КНИГИ -->
+<div class="section">
+    <a href="nevymykai.html" class="button">
+        📘 Не Вимикай Світло — відкрити
     </a>
 </div>
+
+<!-- ОПИС -->
+<div class="section">
+    <h2>Опис</h2>
+    <p>
+        Місто, що тріскається по швах реальності. Світло більше не захищає.
+        Тіні ростуть, і кожна з них пам’ятає тебе.
+    </p>
+</div>
+
+<!-- ДОНАТ -->
+<div class="section" style="text-align:center;">
+    <h2 class="orange">Підтримати автора</h2>
+
+    <a href="https://donatello.to/HorrorUnderCoverNights" target="_blank" class="button">
+        💛 Donatello
+    </a>
+</div>
+
+<!-- КОНТАКТИ -->
+<div class="section">
+    <h2>Контакти</h2>
+    <p>Telegram: <a href="https://t.me/OVSIENKO3" class="orange">OVSIENKO3</a></p>
+    <p>Email: <a href="mailto:vasaovsienko341@gmail.com" class="orange">vasaovsienko341@gmail.com</a></p>
+</div>
+
+<!-- ФОРМА -->
+<div class="section">
+    <h2>Замовлення</h2>
+    <form action="https://formspree.io/f/xjkbqlra" method="POST">
+        <input type="text" name="name" placeholder="Ваше ім'я" required>
+        <input type="text" name="contact" placeholder="Контакт" required>
+
+        <select name="format">
+            <option>Електронна — 50 грн</option>
+            <option>Паперова — 100 грн</option>
+        </select>
+
+        <button type="submit">Замовити</button>
+    </form>
+</div>
+
+</div>
+
+</body>
+</html>
