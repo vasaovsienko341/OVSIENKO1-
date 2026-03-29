@@ -3,29 +3,30 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Тіні Дев’ятого Року — Василь Овсієнко</title>
+<title>Сайт автора — Василь Овсієнко</title>
 
 <style>
 body {
     margin: 0;
+    font-family: Arial;
     background: #0d0d0d;
-    color: #fff;
-    font-family: Arial, sans-serif;
+    color: white;
 }
 
 /* Меню */
-.menu {
+nav {
     background: #111;
     padding: 15px;
     text-align: center;
-    border-bottom: 2px solid #ff6a00;
 }
-.menu a {
+nav a {
     color: #ff6a00;
-    margin: 0 20px;
-    font-size: 18px;
+    margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
+}
+nav a:hover {
+    color: #fff;
 }
 
 /* Контейнер */
@@ -33,149 +34,102 @@ body {
     width: 90%;
     max-width: 1100px;
     margin: 30px auto;
-    background: #111;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(255,100,0,0.2);
 }
 
-/* Книга */
-.book-block {
+/* Карточки книг */
+.book {
+    background: #111;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
     display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+    gap: 20px;
+    align-items: center;
 }
-.cover {
-    width: 250px;
-    border-radius: 10px;
+
+.book img {
+    width: 120px;
+    border-radius: 8px;
 }
-.title {
-    font-size: 28px;
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #ff6a00;
+    color: black;
+    text-decoration: none;
+    border-radius: 8px;
     font-weight: bold;
 }
-.orange {
+
+.btn:hover {
+    background: #ff8500;
+}
+
+h1 {
+    text-align: center;
     color: #ff6a00;
 }
-.price {
-    font-size: 22px;
-    margin-top: 10px;
-}
 
-/* Секції */
-.section {
+/* Донат */
+.donate {
+    text-align: center;
     margin-top: 40px;
 }
-
-/* Кнопки */
-.button {
-    display: inline-block;
-    padding: 12px 20px;
-    background: #ff6a00;
-    color: #000;
-    font-weight: bold;
-    border-radius: 8px;
-    text-decoration: none;
-    margin-top: 15px;
-}
-
-/* Форма */
-input, select {
-    width: 100%;
-    padding: 12px;
-    margin-top: 10px;
-    background: #222;
-    border: 1px solid #444;
-    color: #fff;
-    border-radius: 8px;
-}
-button {
-    margin-top: 15px;
-    padding: 12px;
-    background: #ff6a00;
-    border: none;
-    border-radius: 8px;
-    font-weight: bold;
-}
 </style>
+
 </head>
 
 <body>
 
 <!-- Меню -->
-<div class="menu">
+<nav>
     <a href="index.html">Головна</a>
     <a href="books.html">Книги</a>
     <a href="author.html">Автор</a>
-</div>
+</nav>
 
 <div class="container">
 
-<!-- КНИГА -->
-<div class="book-block">
-    <img src="cover.png" class="cover">
+<h1>📚 Книги Василя Овсієнка</h1>
 
+<!-- КНИГА 1 -->
+<div class="book">
+    <img src="cover.png">
     <div>
-        <div class="title">
-            «Тіні Дев’ятого Року» — <span class="orange">Перший Спалах Фенікса</span>
-        </div>
-
+        <h3>Тіні Дев’ятого Року</h3>
         <p>Містичний урбаністичний жах</p>
-
-        <p><b>Автор:</b> Василь Овсієнко</p>
-
-        <div class="price">
-            Електронна — <span class="orange">50 грн</span><br>
-            Паперова — <span class="orange">100 грн</span>
-        </div>
+        <a class="btn" href="index.html#order">Купити</a>
     </div>
 </div>
 
-<!-- КНОПКА ДРУГОЇ КНИГИ -->
-<div class="section">
-    <a href="nevymykai.html" class="button">
-        📘 Не Вимикай Світло — відкрити
+<!-- КНИГА 2 -->
+<div class="book">
+    <img src="nevymykai.png">
+    <div>
+        <h3>Не Вимикай Світло</h3>
+        <p>Психологічний хорор</p>
+        <a class="btn" href="nevymykai.html">Детальніше</a>
+    </div>
+</div>
+
+<!-- КНИГА 3 -->
+<div class="book">
+    <img src="lucy.png">
+    <div>
+        <h3>Люсі Хартфілія та Наруто</h3>
+        <p>Переплетіння світів</p>
+        <a class="btn" href="lucy.html">Детальніше</a>
+    </div>
+</div>
+
+<!-- Донат -->
+<div class="donate">
+    <h2>💖 Підтримати автора</h2>
+    <a class="btn" href="https://donatello.to/HorrorUnderCoverNights" target="_blank">
+        Підтримати
     </a>
-</div>
-
-<!-- ОПИС -->
-<div class="section">
-    <h2>Опис</h2>
-    <p>
-        Місто, що тріскається по швах реальності. Світло більше не захищає.
-        Тіні ростуть, і кожна з них пам’ятає тебе.
-    </p>
-</div>
-
-<!-- ДОНАТ -->
-<div class="section" style="text-align:center;">
-    <h2 class="orange">Підтримати автора</h2>
-
-    <a href="https://donatello.to/HorrorUnderCoverNights" target="_blank" class="button">
-        💛 Donatello
-    </a>
-</div>
-
-<!-- КОНТАКТИ -->
-<div class="section">
-    <h2>Контакти</h2>
-    <p>Telegram: <a href="https://t.me/OVSIENKO3" class="orange">OVSIENKO3</a></p>
-    <p>Email: <a href="mailto:vasaovsienko341@gmail.com" class="orange">vasaovsienko341@gmail.com</a></p>
-</div>
-
-<!-- ФОРМА -->
-<div class="section">
-    <h2>Замовлення</h2>
-    <form action="https://formspree.io/f/xjkbqlra" method="POST">
-        <input type="text" name="name" placeholder="Ваше ім'я" required>
-        <input type="text" name="contact" placeholder="Контакт" required>
-
-        <select name="format">
-            <option>Електронна — 50 грн</option>
-            <option>Паперова — 100 грн</option>
-        </select>
-
-        <button type="submit">Замовити</button>
-    </form>
 </div>
 
 </div>
