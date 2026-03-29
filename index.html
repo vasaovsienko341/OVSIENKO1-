@@ -3,135 +3,116 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Книги Василя Овсієнка</title>
+
+<title>Сайт книг — Василь Овсієнко</title>
 
 <style>
 body {
     margin: 0;
-    font-family: Arial;
     background: #0d0d0d;
     color: white;
+    font-family: Arial;
 }
 
-/* Меню */
-nav {
+header {
     background: #111;
     padding: 15px;
     text-align: center;
 }
+
 nav a {
     color: #ff6a00;
     margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
 }
-nav a:hover {
-    color: white;
-}
 
-/* Контейнер */
 .container {
-    width: 90%;
     max-width: 1100px;
     margin: 30px auto;
-}
-
-/* Заголовок */
-h1 {
-    text-align: center;
-    color: #ff6a00;
-}
-
-/* Книга */
-.book {
-    background: #111;
     padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 12px;
+}
+
+.book {
     display: flex;
     gap: 20px;
-    align-items: center;
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .book img {
-    width: 140px;
-    border-radius: 10px;
-}
-
-/* Кнопки */
-.btn {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 15px;
-    background: #ff6a00;
-    color: black;
-    text-decoration: none;
+    width: 150px;
     border-radius: 8px;
-    font-weight: bold;
 }
 
-.btn:hover {
-    background: #ff8500;
+.orange {
+    color: #ff6a00;
 }
 
-/* Донат */
-.donate {
-    text-align: center;
-    margin-top: 40px;
+button {
+    padding: 10px;
+    background: #ff6a00;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
 }
+
 </style>
-
 </head>
 
 <body>
 
-<!-- МЕНЮ -->
-<nav>
-    <a href="index.html">Головна</a>
-    <a href="books.html">Книги</a>
-    <a href="author.html">Автор</a>
-</nav>
+<header>
+    <h1>📚 Мої книги</h1>
+    <nav>
+        <a href="index.html">Головна</a>
+        <a href="books.html">Книги</a>
+        <a href="author.html">Автор</a>
+    </nav>
+</header>
 
 <div class="container">
 
-<h1>📚 Мої книги</h1>
-
 <!-- КНИГА 1 -->
 <div class="book">
-    <img src="cover.png" alt="Тіні Дев’ятого Року">
+    <img src="cover.png">
     <div>
-        <h3>Тіні Дев’ятого Року</h3>
-        <p>Містичний урбаністичний жах про тріщини між реальностями.</p>
-        <a class="btn" href="index.html#order">Купити</a>
+        <h2>Тіні Дев’ятого Року</h2>
+        <p>Містичний урбаністичний жах</p>
+        <p class="orange">50 грн / 100 грн</p>
+        <a href="index.html">
+            <button>Детальніше</button>
+        </a>
     </div>
 </div>
 
 <!-- КНИГА 2 -->
 <div class="book">
-    <img src="nevymykai.png" alt="Не Вимикай Світло">
+    <img src="nevymykai.png">
     <div>
-        <h3>Не Вимикай Світло</h3>
-        <p>Психологічний хорор про темряву, що дивиться у відповідь.</p>
-        <a class="btn" href="nevymykai.html">Детальніше</a>
+        <h2>Не вимикай світло</h2>
+        <p>Психологічний хорор</p>
+        <p class="orange">50 грн</p>
+        <a href="nevymykai.html">
+            <button>Детальніше</button>
+        </a>
     </div>
 </div>
 
 <!-- КНИГА 3 -->
 <div class="book">
-    <img src="lucy.png" alt="Люсі та Наруто">
+    <img src="lucy.png">
     <div>
-        <h3>Люсі Хартфілія та Наруто Удзумакі</h3>
-        <p>Фантастичне переплетіння двох світів.</p>
-        <a class="btn" href="lucy.html">Детальніше</a>
+        <h2>Люсі Хартфілія та Наруто</h2>
+        <p>Переплетіння світів</p>
+        <p class="orange">50 грн</p>
+        <a href="lucy.html">
+            <button>Детальніше</button>
+        </a>
     </div>
-</div>
-
-<!-- ДОНАТ -->
-<div class="donate">
-    <h2>💖 Підтримати автора</h2>
-    <a class="btn" href="https://donatello.to/HorrorUnderCoverNights" target="_blank">
-        Підтримати
-    </a>
 </div>
 
 </div>
