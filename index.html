@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Сайт автора — Василь Овсієнко</title>
+<title>Книги Василя Овсієнка</title>
 
 <style>
 body {
@@ -26,7 +26,7 @@ nav a {
     font-weight: bold;
 }
 nav a:hover {
-    color: #fff;
+    color: white;
 }
 
 /* Контейнер */
@@ -36,7 +36,13 @@ nav a:hover {
     margin: 30px auto;
 }
 
-/* Карточки книг */
+/* Заголовок */
+h1 {
+    text-align: center;
+    color: #ff6a00;
+}
+
+/* Книга */
 .book {
     background: #111;
     padding: 20px;
@@ -48,10 +54,11 @@ nav a:hover {
 }
 
 .book img {
-    width: 120px;
-    border-radius: 8px;
+    width: 140px;
+    border-radius: 10px;
 }
 
+/* Кнопки */
 .btn {
     display: inline-block;
     margin-top: 10px;
@@ -67,11 +74,6 @@ nav a:hover {
     background: #ff8500;
 }
 
-h1 {
-    text-align: center;
-    color: #ff6a00;
-}
-
 /* Донат */
 .donate {
     text-align: center;
@@ -83,7 +85,7 @@ h1 {
 
 <body>
 
-<!-- Меню -->
+<!-- МЕНЮ -->
 <nav>
     <a href="index.html">Головна</a>
     <a href="books.html">Книги</a>
@@ -92,99 +94,45 @@ h1 {
 
 <div class="container">
 
-<h1>📚 Книги Василя Овсієнка</h1>
+<h1>📚 Мої книги</h1>
 
 <!-- КНИГА 1 -->
 <div class="book">
-    <img src="cover.png">
+    <img src="cover.png" alt="Тіні Дев’ятого Року">
     <div>
         <h3>Тіні Дев’ятого Року</h3>
-        <p>Містичний урбаністичний жах</p>
+        <p>Містичний урбаністичний жах про тріщини між реальностями.</p>
         <a class="btn" href="index.html#order">Купити</a>
     </div>
 </div>
 
 <!-- КНИГА 2 -->
 <div class="book">
-    <img src="nevymykai.png">
+    <img src="nevymykai.png" alt="Не Вимикай Світло">
     <div>
         <h3>Не Вимикай Світло</h3>
-        <p>Психологічний хорор</p>
+        <p>Психологічний хорор про темряву, що дивиться у відповідь.</p>
         <a class="btn" href="nevymykai.html">Детальніше</a>
     </div>
 </div>
 
 <!-- КНИГА 3 -->
 <div class="book">
-    <img src="lucy.png">
+    <img src="lucy.png" alt="Люсі та Наруто">
     <div>
-        <h3>Люсі Хартфілія та Наруто</h3>
-        <p>Переплетіння світів</p>
+        <h3>Люсі Хартфілія та Наруто Удзумакі</h3>
+        <p>Фантастичне переплетіння двох світів.</p>
         <a class="btn" href="lucy.html">Детальніше</a>
     </div>
 </div>
 
-<!-- Донат -->
+<!-- ДОНАТ -->
 <div class="donate">
     <h2>💖 Підтримати автора</h2>
     <a class="btn" href="https://donatello.to/HorrorUnderCoverNights" target="_blank">
         Підтримати
     </a>
 </div>
-
-</div>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="uk">
-<head>
-<meta charset="UTF-8">
-<title>Люсі та Наруто</title>
-
-<style>
-body {
-    background: #0d0d0d;
-    color: white;
-    font-family: Arial;
-    text-align: center;
-}
-
-.container {
-    padding: 30px;
-}
-
-img {
-    width: 300px;
-    border-radius: 10px;
-}
-
-a {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background: orange;
-    color: black;
-    text-decoration: none;
-    border-radius: 8px;
-}
-</style>
-
-</head>
-
-<body>
-
-<div class="container">
-
-<h1>Люсі Хартфілія та Наруто Удзумакі</h1>
-
-<p>Переплетіння світів — фантастична історія про зустріч двох всесвітів.</p>
-
-<img src="lucy.png">
-
-<br>
-
-<a href="index.html">⬅ Назад</a>
 
 </div>
 
