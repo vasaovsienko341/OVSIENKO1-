@@ -159,6 +159,167 @@ input, select {
         <label>Книга</label>
         <input type="text" name="book" id="bookInput" required>
 
+         <!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Книги — Василь Овсієнко</title>
+
+<style>
+body {
+    margin: 0;
+    background: linear-gradient(180deg, #0d0d0d, #000);
+    color: white;
+    font-family: Arial;
+}
+
+header {
+    background: #111;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #222;
+}
+
+nav a {
+    color: #ff6a00;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #111;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 0 15px rgba(255,100,0,0.2);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.orange {
+    color: #ff6a00;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: #ff6a00;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ff8800;
+}
+
+.form-box {
+    margin-top: 40px;
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: #222;
+    border: 1px solid #444;
+    color: white;
+    border-radius: 6px;
+}
+
+.donate {
+    margin-top: 40px;
+    text-align: center;
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>📚 Магазин книг</h1>
+    <nav>
+        <a href="index.html">Головна</a>
+        <a href="books.html">Книги</a>
+        <a href="author.html">Автор</a>
+    </nav>
+</header>
+
+<div class="container">
+
+<h2>🔥 Мої книги</h2>
+
+<div class="grid">
+
+<!-- КНИГА 1 -->
+<div class="card">
+    <img src="cover.png">
+    <h3>Тіні Дев’ятого Року</h3>
+    <p>Містичний хорор</p>
+    <p class="orange">50 / 100 грн</p>
+    <button onclick="selectBook('Тіні Дев’ятого Року')">Замовити</button>
+</div>
+
+<!-- КНИГА 2 -->
+<div class="card">
+    <img src="nevymykai.png">
+    <h3>Не вимикай світло</h3>
+    <p>Психологічний жах</p>
+    <p class="orange">50 грн</p>
+    <button onclick="selectBook('Не вимикай світло')">Замовити</button>
+</div>
+
+<!-- КНИГА 3 -->
+<div class="card">
+    <img src="lucy.png">
+    <h3>Люсі та Наруто</h3>
+    <p>Переплетіння світів</p>
+    <p class="orange">50 грн</p>
+    <button onclick="selectBook('Люсі та Наруто')">Замовити</button>
+</div>
+
+</div>
+
+<!-- ФОРМА -->
+<div class="form-box">
+    <h2>📩 Замовлення</h2>
+
+    <form action="https://formspree.io/f/xjkbqlra" method="POST">
+        
+        <label>Книга</label>
+        <input type="text" name="book" id="8531781158:AAH8flxkObp55BcKoJ_QZIVAXd9DD90-21k" required>
+
         <label>Ваше ім’я</label>
         <input type="text" name="name" required>
 
@@ -175,6 +336,27 @@ input, select {
     </form>
 </div>
 
+<!-- ДОНАТ -->
+<div class="donate">
+    <h2>💖 Підтримати автора</h2>
+    <p>Можеш підтримати розвиток книг</p>
+    <a href="https://donatello.to/HorrorUnderCoverNights" target="_blank">
+        <button>Задонатити</button>
+    </a>
+</div>
+
+</div>
+
+<script>
+function selectBook(name) {
+    document.getElementById("bookInput").value = name;
+    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+}
+</script>
+
+</body>
+</html>
+  
 <!-- ДОНАТ -->
 <div class="donate">
     <h2>💖 Підтримати автора</h2>
