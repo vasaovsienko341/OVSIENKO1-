@@ -1,130 +1,140 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Книги — Василь Овсієнко</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: #0d0d0d;
-            color: #fff;
-            font-family: Arial, sans-serif;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        .menu {
-            width: 100%;
-            background: #111;
-            padding: 15px 0;
-            text-align: center;
-            box-shadow: 0 0 10px rgba(255, 100, 0, 0.2);
-        }
+<title>Мої книги — Василь Овсієнко</title>
 
-        .menu a {
-            color: #ff6a00;
-            text-decoration: none;
-            font-size: 20px;
-            margin: 0 20px;
-            font-weight: bold;
-        }
+<style>
+body {
+    margin: 0;
+    background: #0d0d0d;
+    font-family: Arial;
+    color: #fff;
+}
 
-        .menu a:hover {
-            color: #ffa346;
-        }
+header {
+    background: #111;
+    padding: 15px;
+    text-align: center;
+}
 
-        .container {
-            width: 90%;
-            max-width: 1100px;
-            margin: 30px auto;
-        }
+nav a {
+    color: #ff6a00;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-        h1 {
-            text-align: center;
-            margin-bottom: 40px;
-            color: #ff6a00;
-        }
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+}
 
-        .book-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 30px;
-            justify-content: center;
-        }
+h1 {
+    text-align: center;
+}
 
-        .book-card {
-            background: #111;
-            border-radius: 15px;
-            width: 300px;
-            padding: 20px;
-            box-shadow: 0 0 15px rgba(255, 100, 0, 0.2);
-            text-align: center;
-        }
+.books {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
 
-        .book-card img {
-            width: 100%;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(255, 100, 0, 0.3);
-        }
-<div class="card">
-    <img src="lucy.png">
-    <h3>Люсі Хартфілія та Наруто</h3>
-    <p>Переплетіння світів</p>
-    <p class="orange">50 грн</p>
-    <button onclick="selectBook('Люсі Хартфілія та Наруто')">Замовити</button>
-</div>
-        .book-title {
-            margin-top: 15px;
-            font-size: 22px;
-            font-weight: bold;
-        }
+.card {
+    background: #111;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(255,100,0,0.2);
+}
 
-        .book-btn {
-            display: inline-block;
-            margin-top: 15px;
-            padding: 10px 15px;
-            background: #ff6a00;
-            border-radius: 8px;
-            color: #000;
-            font-weight: bold;
-            text-decoration: none;
-        }
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
 
-        .book-btn:hover {
-            background: #ff8100;
-        }
-    </style>
+.title {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.price {
+    color: #ff6a00;
+    margin: 10px 0;
+}
+
+button {
+    background: #ff6a00;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #ff8000;
+}
+</style>
+
 </head>
+
 <body>
 
-<div class="menu">
+<header>
+<nav>
     <a href="index.html">Головна</a>
     <a href="books.html">Книги</a>
     <a href="author.html">Автор</a>
-</div>
+</nav>
+</header>
 
 <div class="container">
 
-    <h1>Мої книги</h1>
+<h1>📚 Мої книги</h1>
 
-    <div class="book-list">
+<div class="books">
 
-        <!-- Книга 1 -->
-        <div class="book-card">
-            <img src="cover.png" alt="Тіні Дев’ятого Року">
-            <div class="book-title">Тіні Дев’ятого Року</div>
-            <a class="book-btn" href="index.html#order">Детальніше</a>
-        </div>
+<!-- КНИГА 1 -->
+<div class="card">
+    <img src="cover.png">
+    <div class="title">Тіні Дев’ятого Року</div>
+    <div>Містичний хорор</div>
+    <div class="price">50 / 100 грн</div>
+    <a href="index.html">
+        <button>Детальніше</button>
+    </a>
+</div>
 
-        <!-- Книга 2 -->
-        <div class="book-card">
-            <img src="nevymykai-cover.png" alt="Не Вимикай Світло">
-            <div class="book-title">Не Вимикай Світло</div>
-            <a class="book-btn" href="nevymykai.html">Детальніше</a>
-        </div>
+<!-- КНИГА 2 -->
+<div class="card">
+    <img src="nevymykai.png">
+    <div class="title">Не вимикай світло</div>
+    <div>Психологічний жах</div>
+    <div class="price">50 грн</div>
+    <a href="nevymykai.html">
+        <button>Детальніше</button>
+    </a>
+</div>
 
-    </div>
+<!-- КНИГА 3 -->
+<div class="card">
+    <img src="lucy.png">
+    <div class="title">Люсі та Наруто</div>
+    <div>Переплетіння світів</div>
+    <div class="price">50 грн</div>
+    <a href="lucy.html">
+        <button>Детальніше</button>
+    </a>
+</div>
 
- 
+</div>
 
- 
+</div>
+
+</body>
+</html>
